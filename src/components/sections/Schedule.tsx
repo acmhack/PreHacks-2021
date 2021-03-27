@@ -66,14 +66,14 @@ export default () => {
 
   return (
     <div>
-      <FlexCenter>
-        <FlexColumn>
+      <FlexColumn>
+        <FlexCenter>
           <SectionTitle>Schedule</SectionTitle>
-          <SectionDescription style={{ paddingLeft: "20px" }}>
-            During 5:30-6:30 pm CDT
-          </SectionDescription>
-        </FlexColumn>
-      </FlexCenter>
+        </FlexCenter>
+        <FlexCenter>
+          <SectionDescription>During 5:30-6:30 pm CDT</SectionDescription>
+        </FlexCenter>
+      </FlexColumn>
 
       <ScheduleGroup>
         <DayCheckGroup>
