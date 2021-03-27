@@ -1,12 +1,13 @@
 import React from "react";
 import "./App.css";
 import styled, { AnyStyledComponent } from "styled-components";
-import SectionHeader from "./components/common/Headers/SectionHeader";
+
 import PageHeader from "./components/common/Headers/PageHeader";
 import PageTitle from "./components/common/Headers/PageTitle";
 
 import Schedule from "./components/sections/Schedule";
 import About from "./components/sections/About";
+import FAQ from "./components/sections/FAQ";
 
 const FlexContainer: AnyStyledComponent = styled.div`
   display: flex;
@@ -27,21 +28,15 @@ const FlexLeft: AnyStyledComponent = styled.div`
 `;
 
 const Constraint: AnyStyledComponent = styled.div`
-  max-width: 1000px;
   display: flex;
 
   width: 1000px;
 `;
-const ScheduleDiv: AnyStyledComponent = styled.div`
-  padding-left: 50px;
-  @media (max-width: 600px) {
-    padding: 0px;
-  }
+const SectionDiv: AnyStyledComponent = styled.div`
+  padding-bottom: 8%;
+  padding-top: 8%;
 `;
-const AboutDiv: AnyStyledComponent = styled.div`
-  padding-bottom: 80px;
-  padding-top: 80px;
-`;
+
 export default () => {
   return (
     <div>
@@ -52,14 +47,17 @@ export default () => {
               <PageTitle>PickHacks presents</PageTitle>
               <PageHeader>PreHacks</PageHeader>
             </FlexLeft>
-
-            <AboutDiv>
+            <SectionDiv>
               <About />
-            </AboutDiv>
+            </SectionDiv>
 
-            <ScheduleDiv>
+            <SectionDiv>
               <Schedule />
-            </ScheduleDiv>
+            </SectionDiv>
+
+            <SectionDiv>
+              <FAQ />
+            </SectionDiv>
           </FlexContainer>
         </Constraint>
       </FlexCenter>
