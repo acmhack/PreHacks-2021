@@ -1,6 +1,6 @@
 # PreHacks 2021 page
 
-
+[View Live](https://prehacks.pickhacks.io/) 
 
 ## Table of Contents
 
