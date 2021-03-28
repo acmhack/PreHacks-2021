@@ -2,7 +2,8 @@ import React from "react";
 import styled, { AnyStyledComponent } from "styled-components";
 
 const Title: AnyStyledComponent = styled.div`
-  font-family: Poppins;
+  font-family: titling-gothic-fb-wide, sans-serif;
+  font-weight: bold;
 
   font-size: 250%;
   padding: 1%;

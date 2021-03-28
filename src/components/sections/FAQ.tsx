@@ -28,11 +28,11 @@ export default (props: any) => {
           <Constraint>
             <FlexCenter>
               <FlexColumn>
-                <FAQSegment title="What?">sd</FAQSegment>
-                <FAQSegment title="When?">sd</FAQSegment>
-                <FAQSegment title="Where?">sd</FAQSegment>
-                <FAQSegment title="Who?">sd</FAQSegment>
-                <FAQSegment title="Others?">sd</FAQSegment>
+                <FAQSegment title="What?">answer</FAQSegment>
+                <FAQSegment title="When?">answer</FAQSegment>
+                <FAQSegment title="Where?">answer</FAQSegment>
+                <FAQSegment title="Who?">answer</FAQSegment>
+                <FAQSegment title="Others?">answer</FAQSegment>
               </FlexColumn>
             </FlexCenter>
           </Constraint>

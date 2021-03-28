@@ -2,15 +2,18 @@ import React from "react";
 import styled, { AnyStyledComponent } from "styled-components";
 
 const Title: AnyStyledComponent = styled.div`
-  font-family: Poppins;
-  font-size: 250%;
-  padding: 4%;
-  padding-bottom: 1%;
-  font-style: normal;
+  font-family: titling-gothic-fb, sans-serif;
+  font-weight: 200;
+  font-size: 150%;
+
+  margin-top: 4%;
+  margin-bottom -2%;
+  padding-bottom: 2%;
+
 
   letter-spacing: 1px;
   @media (max-width: 600px) {
-    font-size: 9vw;
+    font-size: 3vw;
   }
 `;
 

@@ -2,7 +2,7 @@ import React from "react";
 import styled, { AnyStyledComponent } from "styled-components";
 
 const Description: AnyStyledComponent = styled.div`
-  font-family: Poppins;
+  font-family: "Gotham-Medium", sans-serif;
   font-size: 120%;
   max-width: 500px;
 
