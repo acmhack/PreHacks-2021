@@ -1,0 +1,1 @@
+{"version":3,"sources":["App.css"],"names":[],"mappings":"AAAA,KACE,QAAS,CACT,wBAAyB,CACzB,UAAY,CACZ,mBACF,CACA,KACE,iBACF","file":"main.db074452.chunk.css","sourcesContent":["body {\r\n  margin: 0;\r\n  background-color: #121212;\r\n  color: white;\r\n  font-family: Poppins;\r\n}\r\nhtml {\r\n  overflow-y: scroll;\r\n}\r\n"]}
