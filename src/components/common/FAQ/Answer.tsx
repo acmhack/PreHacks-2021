@@ -3,14 +3,14 @@ import styled, { AnyStyledComponent } from "styled-components";
 
 const Title: AnyStyledComponent = styled.div`
   font-family: Poppins;
-  font-size: 130%;
+  font-size: 140%;
   padding-top: 10%;
   font-style: normal;
-  font-weight: 300;
+  font-weight: normal;
   line-height: 1em;
   letter-spacing: 1px;
   @media (max-width: 600px) {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
 `;
 

@@ -31,7 +31,15 @@ const TitleText: AnyStyledComponent = styled.div`
   font-weight: 400;
   padding-right: 10px;
   font-size: 1.5em;
+
   padding-bottom: 2%;
+
+  @media (max-width: 600px) {
+    font-size: 1em;
+  }
+  @media (max-width: 400px) {
+    font-size: 0.9em;
+  }
 `;
 const Border: AnyStyledComponent = styled.div`
   display: flex;
@@ -47,16 +55,34 @@ const BoxGroup: AnyStyledComponent = styled.div`
 `;
 const TitleGroup: AnyStyledComponent = styled.div`
   display: flex;
+  position: relative;
   flex-direction: row;
 `;
 const DayLabel: AnyStyledComponent = styled.div`
   display: flex;
   background-color: ${(props: CardProps) => props.dayColor};
   border-radius: 50px;
-  margin-top: 5px;
+
   padding: 4px;
+  font-size: 14px;
+  position: absolute;
   color: white;
-  height: 23px;
+  top: 0px;
+  right: 0px;
+  align-items: center;
+  height: 16px;
+  @media (min-width: 600px) {
+    display: none;
+  }
+  @media (max-width: 400px) {
+    font-size: 10px;
+  }
+`;
+const Test: AnyStyledComponent = styled.div`
+  display: flex;
+ 
+  width: 50px;
+
   @media (min-width: 600px) {
     display: none;
 `;
@@ -84,6 +110,7 @@ export default ({ title, description, day }: CardProps) => {
         <Box>
           <TitleGroup>
             <TitleText>{title}</TitleText>
+            <Test></Test>
             <DayLabel dayColor={dayPicker}>{day}</DayLabel>
           </TitleGroup>
 

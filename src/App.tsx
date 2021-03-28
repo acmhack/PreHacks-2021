@@ -1,10 +1,7 @@
 import React from "react";
 import "./App.css";
 import styled, { AnyStyledComponent } from "styled-components";
-
-import PageHeader from "./components/common/Headers/PageHeader";
-import PageTitle from "./components/common/Headers/PageTitle";
-
+import Hero from "./components/sections/Hero";
 import Schedule from "./components/sections/Schedule";
 import About from "./components/sections/About";
 import FAQ from "./components/sections/FAQ";
@@ -29,7 +26,6 @@ const FlexLeft: AnyStyledComponent = styled.div`
 
 const Constraint: AnyStyledComponent = styled.div`
   display: flex;
-
   width: 1000px;
 `;
 const SectionDiv: AnyStyledComponent = styled.div`
@@ -43,10 +39,12 @@ export default () => {
       <FlexCenter>
         <Constraint>
           <FlexContainer>
-            <FlexLeft>
-              <PageTitle>PickHacks presents</PageTitle>
-              <PageHeader>PreHacks</PageHeader>
-            </FlexLeft>
+            <FlexLeft></FlexLeft>
+
+            <SectionDiv>
+              <Hero />
+            </SectionDiv>
+
             <SectionDiv>
               <About />
             </SectionDiv>
