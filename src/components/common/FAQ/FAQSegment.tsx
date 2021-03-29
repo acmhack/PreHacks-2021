@@ -18,18 +18,24 @@ const FlexColumn: AnyStyledComponent = styled.div`
 
   flex-direction: column;
 `;
+const Group: AnyStyledComponent = styled.div`
+  padding-left: 10px;
+  padding-right: 10px;
+`;
 
 export default ({ title, children }: ISegmentProps) => {
   return (
     <div>
-      <FlexColumn>
-        <FlexCenter>
-          <QuestionHeader>{title}</QuestionHeader>
-        </FlexCenter>
-        <FlexCenter>
-          <Answer>{children}</Answer>
-        </FlexCenter>
-      </FlexColumn>
+      <Group>
+        <FlexColumn>
+          <FlexCenter>
+            <QuestionHeader>{title}</QuestionHeader>
+          </FlexCenter>
+          <FlexCenter>
+            <Answer>{children}</Answer>
+          </FlexCenter>
+        </FlexColumn>
+      </Group>
     </div>
   );
 };

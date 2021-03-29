@@ -42,6 +42,7 @@ const MSTtext: AnyStyledComponent = styled.div`
 `;
 const HeroDiv: AnyStyledComponent = styled.div`
   padding-left: 20px;
+  padding-right: 20px;
 `;
 export default (props: any) => {
   return (
