@@ -2,7 +2,7 @@
   {
     "day": "Monday",
     "title": "Introduction to Prehacks",
-    "description": ""
+    "description": "This will just be a quick introduction to the Prehacks event as a whole, what we have planned for the week, and a brief talk about PickHacks."
   },
   {
     "day": "Monday",
@@ -12,12 +12,12 @@
   {
     "day": "Tuesday",
     "title": "Introduction to Web Scraping",
-    "description": ""
+    "description": "Workshop attendees will learn the basics of web scraping using the JavaScript library puppeteer. At the end of the workshop, attendees will have a json file full of data that will fuel a course ranking website. "
   },
   {
     "day": "Tuesday",
     "title": "Walkthrough of a Hackathon Weekend",
-    "description": ""
+    "description": "Here, participants can see what an entire weekend at a hackathon looks like, from attending the opening ceremony, watching workshops, and playing games to finally submitting their projects. "
   },
   {
     "day": "Wednesday",
@@ -27,7 +27,7 @@
   {
     "day": "Wednesday",
     "title": "General Q&A",
-    "description": ""
+    "description": "We will be present in a call to answer any questions about Pre and PickHacks."
   },
  
   {

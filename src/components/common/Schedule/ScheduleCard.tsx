@@ -29,6 +29,7 @@ const DescText: AnyStyledComponent = styled.div`
 const TitleText: AnyStyledComponent = styled.div`
   display: flex;
   font-weight: 400;
+
   padding-right: 10px;
   font-size: 1.5em;
 
@@ -62,56 +63,61 @@ const DayLabel: AnyStyledComponent = styled.div`
   display: flex;
   background-color: ${(props: CardProps) => props.dayColor};
   border-radius: 50px;
-
   padding: 4px;
   font-size: 14px;
-  position: absolute;
+
   color: white;
-  top: 0px;
-  right: 0px;
   align-items: center;
   height: 16px;
   @media (min-width: 600px) {
     display: none;
+    font-size: 8px;
   }
   @media (max-width: 400px) {
-    font-size: 10px;
   }
+`;
+
+const DayLabelGroup: AnyStyledComponent = styled.div`
+  display: flex;
+  top: 0px;
+
+  position: absolute;
+  right: 0px;
 `;
 const Test: AnyStyledComponent = styled.div`
   display: flex;
- 
   width: 50px;
-
   @media (min-width: 600px) {
     display: none;
 `;
 
 export default ({ title, description, day }: CardProps) => {
-  function dayPicker() {
+  function dayPicker(): string[] {
     switch (day) {
       case "Monday":
-        return "#e43883";
+        return ["#e43883", "April 5th"];
       case "Tuesday":
-        return "#4825FF";
+        return ["#4825FF", "April 6th"];
       case "Wednesday":
-        return "#E4CF38";
+        return ["#E4CF38", "April 7th"];
       case "Thursday":
-        return "#40ABD7";
+        return ["#40ABD7", "April 8th"];
       default:
-        return "gray";
+        return ["gray", "nerd"];
     }
   }
 
   return (
     <div>
       <BoxGroup>
-        <Border dayColor={dayPicker} />
+        <Border dayColor={dayPicker()[0]} />
         <Box>
           <TitleGroup>
             <TitleText>{title}</TitleText>
             <Test></Test>
-            <DayLabel dayColor={dayPicker}>{day}</DayLabel>
+            <DayLabelGroup>
+              <DayLabel dayColor={dayPicker()[0]}>{dayPicker()[1]}</DayLabel>
+            </DayLabelGroup>
           </TitleGroup>
 
           <DescText>{description}</DescText>
