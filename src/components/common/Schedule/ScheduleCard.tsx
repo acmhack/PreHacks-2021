@@ -38,8 +38,8 @@ const TitleText: AnyStyledComponent = styled.div`
   @media (max-width: 600px) {
     font-size: 1em;
   }
-  @media (max-width: 400px) {
-    font-size: 0.9em;
+  @media (max-width: 323px) {
+    font-size: 1.08em;
   }
 `;
 const Border: AnyStyledComponent = styled.div`
