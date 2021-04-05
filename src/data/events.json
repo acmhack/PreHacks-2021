@@ -6,12 +6,12 @@
   },
   {
     "day": "Monday",
-    "title": "Intro to Basic Programming Languages",
-    "description": ""
+    "title": "Intro to Web Development",
+    "description": "In this workshop, we'll provide a brief introduction to some tools that may be helpful to use in your hack this weekend. We'll be going over the basics of HTML, CSS, JavaScript. We'll also introduce ReactJS which you can use to create web applications."
   },
   {
     "day": "Tuesday",
-    "title": "Introduction to Web Scraping",
+    "title": "Intro to Web Scraping",
     "description": "Workshop attendees will learn the basics of web scraping using the JavaScript library puppeteer. At the end of the workshop, attendees will have a json file full of data that will fuel a course ranking website. "
   },
   {
