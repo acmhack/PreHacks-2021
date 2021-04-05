@@ -4,7 +4,7 @@ import styled, { AnyStyledComponent } from "styled-components";
 const Title: AnyStyledComponent = styled.div`
   font-family: Poppins;
   font-size: 140%;
-  padding-top: 10%;
+  padding-top: 1%;
   font-style: normal;
   font-weight: normal;
   line-height: 1em;

@@ -5,7 +5,8 @@ const Title: AnyStyledComponent = styled.div`
   font-family: Poppins;
   font-size: 150%;
   padding: 3%;
-  padding-top: 20%;
+
+  padding-top: 5%;
   font-style: normal;
   font-weight: 700;
   line-height: 1em;
